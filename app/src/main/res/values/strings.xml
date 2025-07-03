@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Contatos Emergência</string>
+    <string name="app_name">ProtegePlus</string>
     <string name="titulo_home">Contatos de Emergência</string>
     <string name="adicionar_contato">Adicionar Contato</string>
     <string name="nome">Nome</string>

@@ -1,0 +1,7 @@
+com.contatosemergencia.test.app-annotation-experimental-1.3.0-0 C:\Users\arthu\.gradle\caches\8.9\transforms\035e5ee53db839820290abb1f5c8abb2\transformed\annotation-experimental-1.3.0\res
+com.contatosemergencia.test.app-core-1.5.0-1 C:\Users\arthu\.gradle\caches\8.9\transforms\f7e153e9f896068f5f9bf3b2d704817c\transformed\core-1.5.0\res
+com.contatosemergencia.test.app-androidTest-2 C:\Users\arthu\OneDrive\Desktop\projeto robotica\app\build\generated\res\resValues\androidTest\debug
+com.contatosemergencia.test.app-androidTest-3 C:\Users\arthu\OneDrive\Desktop\projeto robotica\app\build\generated\res\rs\androidTest\debug
+com.contatosemergencia.test.app-mergeDebugAndroidTestResources-4 C:\Users\arthu\OneDrive\Desktop\projeto robotica\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.contatosemergencia.test.app-mergeDebugAndroidTestResources-5 C:\Users\arthu\OneDrive\Desktop\projeto robotica\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.contatosemergencia.test.app-merged_res-6 C:\Users\arthu\OneDrive\Desktop\projeto robotica\app\build\intermediates\merged_res\debugAndroidTest

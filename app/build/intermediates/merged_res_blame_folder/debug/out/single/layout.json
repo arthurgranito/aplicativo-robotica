@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\arthu\\.gradle\\daemon\\8.9\\com.contatosemergencia.app-mergeDebugResources-49:\\layout\\activity_cadastro_contato.xml",
+        "source": "C:\\Users\\arthu\\.gradle\\daemon\\8.9\\com.contatosemergencia.app-main-52:\\layout\\activity_cadastro_contato.xml"
+    },
+    {
+        "merged": "C:\\Users\\arthu\\.gradle\\daemon\\8.9\\com.contatosemergencia.app-mergeDebugResources-49:\\layout\\item_contato.xml",
+        "source": "C:\\Users\\arthu\\.gradle\\daemon\\8.9\\com.contatosemergencia.app-main-52:\\layout\\item_contato.xml"
+    },
+    {
+        "merged": "com.contatosemergencia.app-mergeDebugResources-49:/layout/item_contato.xml",
+        "source": "com.contatosemergencia.app-main-52:/layout/item_contato.xml"
+    },
+    {
+        "merged": "C:\\Users\\arthu\\.gradle\\daemon\\8.9\\com.contatosemergencia.app-mergeDebugResources-49:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\arthu\\.gradle\\daemon\\8.9\\com.contatosemergencia.app-main-52:\\layout\\activity_main.xml"
+    }
+]

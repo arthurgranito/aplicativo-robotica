@@ -19,6 +19,9 @@ import com.google.android.material.textview.MaterialTextView
 import kotlinx.coroutines.*
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import com.microsoft.appcenter.AppCenter;
+import com.microsoft.appcenter.analytics.Analytics;
+import com.microsoft.appcenter.crashes.Crashes;
 
 class MainActivity : AppCompatActivity() {
     
@@ -89,7 +92,9 @@ class MainActivity : AppCompatActivity() {
     }
     
     private fun configurarRecyclerView() {
-        contatosAdapter = ContatosAdapter()
+        contatosAdapter = ContatosAdapter(onExcluirClick = { contato ->
+            confirmarExclusao(contato)
+        })
         recyclerViewContatos.apply {
             layoutManager = LinearLayoutManager(this@MainActivity)
             adapter = contatosAdapter
@@ -198,6 +203,39 @@ class MainActivity : AppCompatActivity() {
                     Toast.makeText(this@MainActivity, "SMS de emergência enviado!", Toast.LENGTH_LONG).show()
                 } else {
                     Toast.makeText(this@MainActivity, "Erro ao enviar SMS", Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
+    }
+    
+    private fun confirmarExclusao(contato: Contato) {
+        AlertDialog.Builder(this)
+            .setTitle("Excluir contato")
+            .setMessage("Tem certeza que deseja excluir o contato ${contato.nome}?")
+            .setPositiveButton("Excluir") { _, _ ->
+                excluirContato(contato)
+            }
+            .setNegativeButton("Cancelar", null)
+            .show()
+    }
+
+    private fun excluirContato(contato: Contato) {
+        scope.launch {
+            try {
+                val response = apiService.excluirContato(contato.id ?: "")
+                if (response.isSuccessful) {
+                    runOnUiThread {
+                        Toast.makeText(this@MainActivity, "Contato excluído com sucesso!", Toast.LENGTH_SHORT).show()
+                        carregarContatos()
+                    }
+                } else {
+                    runOnUiThread {
+                        Toast.makeText(this@MainActivity, "Erro ao excluir contato", Toast.LENGTH_SHORT).show()
+                    }
+                }
+            } catch (e: Exception) {
+                runOnUiThread {
+                    Toast.makeText(this@MainActivity, "Erro de conexão: ${e.message}", Toast.LENGTH_SHORT).show()
                 }
             }
         }

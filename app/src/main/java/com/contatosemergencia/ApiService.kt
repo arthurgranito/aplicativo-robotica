@@ -10,4 +10,7 @@ interface ApiService {
     
     @POST("contatos")
     suspend fun cadastrarContato(@Body contato: Contato): Response<Contato>
+    
+    @DELETE("contatos/{id}")
+    suspend fun excluirContato(@Path("id") id: String): Response<Unit>
 } 

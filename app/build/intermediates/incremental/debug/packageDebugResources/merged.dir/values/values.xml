@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="accent">#FF5722</color>
+    <color name="background">#F5F5F5</color>
+    <color name="black">#000000</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="green">#4CAF50</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="input_background">#FFFFFF</color>
+    <color name="orange">#FF9800</color>
+    <color name="primary">#2196F3</color>
+    <color name="primary_dark">#1976D2</color>
+    <color name="primary_light">#BBDEFB</color>
+    <color name="primary_text">#212121</color>
+    <color name="red">#F44336</color>
+    <color name="secondary_text">#757575</color>
+    <color name="white">#FFFFFF</color>
+    <string name="adicionar_contato">Adicionar Contato</string>
+    <string name="app_name">ProtegePlus</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="conectar_bluetooth">Conectar Bluetooth</string>
+    <string name="desconectar_bluetooth">Desconectar Bluetooth</string>
+    <string name="descricao">Descrição</string>
+    <string name="erro_cadastro">Erro ao cadastrar contato</string>
+    <string name="erro_conexao">Erro na conexão</string>
+    <string name="mensagem_queda">Atenção! Queda detectada</string>
+    <string name="nome">Nome</string>
+    <string name="permissao_necessaria">Permissão necessária para funcionar corretamente</string>
+    <string name="salvar">Salvar</string>
+    <string name="sem_contatos">Nenhum contato cadastrado</string>
+    <string name="status_bluetooth">Status Bluetooth: Desconectado</string>
+    <string name="sucesso_cadastro">Contato cadastrado com sucesso!</string>
+    <string name="telefone">Telefone</string>
+    <string name="titulo_home">Contatos de Emergência</string>
+    <style name="Theme.ContatosEmergencia" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorSecondaryVariant">@color/accent</item>
+        <item name="colorOnSecondary">@color/white</item>
+        
+        <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
+        
+        <item name="android:windowBackground">@color/background</item>
+        <item name="colorSurface">@color/input_background</item>
+        <item name="colorOnSurface">@color/primary_text</item>
+    </style>
+</resources>
