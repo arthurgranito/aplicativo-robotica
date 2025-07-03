@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Contatos Emergência</string>
+    <string name="titulo_home">Contatos de Emergência</string>
+    <string name="adicionar_contato">Adicionar Contato</string>
+    <string name="nome">Nome</string>
+    <string name="telefone">Telefone</string>
+    <string name="descricao">Descrição</string>
+    <string name="salvar">Salvar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="mensagem_queda">Atenção! Queda detectada</string>
+    <string name="conectar_bluetooth">Conectar Bluetooth</string>
+    <string name="desconectar_bluetooth">Desconectar Bluetooth</string>
+    <string name="status_bluetooth">Status Bluetooth: Desconectado</string>
+    <string name="erro_conexao">Erro na conexão</string>
+    <string name="sucesso_cadastro">Contato cadastrado com sucesso!</string>
+    <string name="erro_cadastro">Erro ao cadastrar contato</string>
+    <string name="sem_contatos">Nenhum contato cadastrado</string>
+    <string name="permissao_necessaria">Permissão necessária para funcionar corretamente</string>
+</resources> 
