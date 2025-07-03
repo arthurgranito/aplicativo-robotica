@@ -5,8 +5,6 @@ workflows:
     environment:
       vars:
         JAVA_VERSION: 11
-      android_signing:
-        - keystore_reference
     scripts:
       - name: Build APK
         script: |
